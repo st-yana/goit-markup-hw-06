@@ -81,12 +81,12 @@ body{
 /* -------------------------------------------------- */
 /* ---------------header------------ */
 .header{
-    padding: 24px 156px;
     border-bottom: 1px solid #e7e9fc; 
 }
 .header__container{
     display: flex;
     width: 1158px;
+    align-items: center;
 }
 .header__container__navigation{
     display: flex;
@@ -104,7 +104,6 @@ body{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    padding-right: 76px;
     margin-right: 76px;;
 }
 .header__container__navigation__logo__part{
@@ -115,6 +114,7 @@ body{
     letter-spacing: 0.02em;
     color: #2e2f42;
     padding: 24px 0 24px;
+    display: block;
 }
 .header__container__address__list__item{
     color: #434455;
