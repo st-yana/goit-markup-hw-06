@@ -205,8 +205,23 @@ body{
     gap: 24px;
 }
 .features__container__list__item{
-    
     width: calc((100% - 72px) / 4);
+    justify-content: space-between;
+    
+}
+.features__container__list__item__link-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background: #f4f4fd;
+    margin-bottom: 8px;
+}
+.features__container__list__item__link-icon-svg{
+
 }
 .features__container__list__item__title{
     margin-bottom: 8px;
@@ -232,10 +247,33 @@ body{
 .team__container__list__item__caption{
     text-align: center;
     background-color: #FFFFFF;
-    padding: 32px 0;
+    padding: 32px 16px;
 }
 .team__container__list__item__caption__subtitle{
     margin-bottom: 8px;
+}
+.team__container__list__icon{
+    display: flex;
+    margin-top: 8px;
+    justify-content: space-between;
+}
+.team__container__list__item__link-icon{
+    background-color: #4d5ae5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team__container__list__item__link-icon-svg{
+    fill: #F4F4FD;
+}
+.team__container__list__item__link-icon:hover{
+    background-color: #31d0aa;
 }
 
 /* ------------3333333333---------- */
@@ -272,6 +310,10 @@ body{
 .footer{
     background-color: #2e2f42;
     padding: 100px 0;
+    display: flex;
+}
+.footer__container{
+    margin: 0 120px;
 }
 .footer__container__logo{
     display: inline-block;
@@ -287,4 +329,17 @@ body{
     color: #f4f4fd;
     background: #2e2f42;
     max-width: 264px;
-}/* ---------------------FOOTER-------------------- */
+}
+.footer__container__social-media{
+    width: 208px;
+    height: 80px;
+}
+.footer__container__social-media__subtitle{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
+}
+/* ---------------------FOOTER-------------------- */
