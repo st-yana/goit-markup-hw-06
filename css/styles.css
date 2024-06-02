@@ -192,6 +192,7 @@ body{
     text-align: center;
     display: block;
     min-width: 169px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .solutions__container__button:hover,
 .solutions__container__button:focus{
@@ -239,6 +240,7 @@ body{
     background-color: #F4F4FD;
     padding: 120px 0;
 }
+
 .team__container__title{
     margin-bottom: 72px;
 }
@@ -250,7 +252,8 @@ body{
 .team__container__list__item__caption{
     text-align: center;
     background-color: #FFFFFF;
-    padding: 32px 16px;
+    padding: 32px 0;
+
 }
 .team__container__list__item__caption__subtitle{
     margin-bottom: 8px;
@@ -258,7 +261,8 @@ body{
 .team__container__list__icon{
     display: flex;
     margin-top: 8px;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 24px;
 }
 .team__container__list__item__link-icon{
     background-color: #4d5ae5;
@@ -269,14 +273,16 @@ body{
     height: 40px;
     width: 40px;
     cursor: pointer;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 .team__container__list__item__link-icon-svg{
     fill: #F4F4FD;
 }
-.team__container__list__item__link-icon:hover{
-    background-color: #31d0aa;
+.team__container__list__item__link-icon:hover,
+.team__container__list__item__link-icon:focus{
+    background-color: #404bbf;
 }
 
 /* ------------3333333333---------- */
@@ -293,9 +299,29 @@ body{
 }
 .portfolio__container__list__item{
     width: calc((100% - 48px) / 3); 
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .portfolio__container__list__item:hover{
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    transform: translateY(0%);
+}
+.portfolio__container__list__item__img{
+    position: relative; 
+    overflow: hidden;
+}
+.portfolio__container__list__item__img__text{
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    padding: 40px 32px; 
+    background-color: #4d5ae5; 
+    height: 100%; 
+    width: 100%; 
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio__container__list__item__caption{
     border-bottom: 1px solid #e7e9fc;
