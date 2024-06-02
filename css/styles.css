@@ -345,8 +345,6 @@ body{
 .footer__container{
     display: flex;
     align-items: baseline;
-}
-.footer__container__content{
     margin-right: 120px;
 }
 .footer__container__content__logo{
