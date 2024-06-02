@@ -303,7 +303,6 @@ body{
 }
 .portfolio__container__list__item:hover{
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-    transform: translateY(0%);
 }
 .portfolio__container__list__item__img{
     position: relative; 
@@ -323,6 +322,9 @@ body{
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.portfolio__container__list__item__img__text:hover{
+    transform: translateY(0%);
+}
 .portfolio__container__list__item__caption{
     border-bottom: 1px solid #e7e9fc;
     border-left: 1px solid #e7e9fc;
@@ -339,20 +341,23 @@ body{
 .footer{
     background-color: #2e2f42;
     padding: 100px 0;
-    display: flex;
 }
 .footer__container{
-    margin: 0 120px;
+    display: flex;
+    align-items: baseline;
 }
-.footer__container__logo{
+.footer__container__content{
+    margin-right: 120px;
+}
+.footer__container__content__logo{
     display: inline-block;
     margin-bottom: 16px;
 }
-.footer__container__logo__part{
+.footer__container__content__logo__part{
     color: #f4f4fd;
 }
-.footer__container__text{
-    font-weight: 400;
+.footer__container__content__text{
+    font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
@@ -370,5 +375,26 @@ body{
     letter-spacing: 0.02em;
     color: #fff;
     margin-bottom: 16px;
+}
+.footer__container__list__icon{
+    gap: 16px;
+}
+.footer__container__list__item__icon{
+    width: 40px;
+    height: 40px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+.footer__container__list__item__link-icon{
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer__container__list__item__link-icon:hover,
+.footer__container__list__item__link-icon:focus{
+    background-color: #31d0aa;
 }
 /* ---------------------FOOTER-------------------- */
