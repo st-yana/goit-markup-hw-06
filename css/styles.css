@@ -409,9 +409,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.footer__container__subscribe__content{
     margin-left: 80px;
+}
+.footer__container__subscribe__form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 24px;
 }
 .footer__container__subscribe__input{
     border: 1px solid #fff;
@@ -423,7 +428,7 @@ body{
     
     font-weight: 400;
     font-size: 12px;
-    line-height: 200%;
+    line-height: 2;
     letter-spacing: 0.04em;
     color: #fff;
 }
@@ -439,9 +444,9 @@ body{
 .footer__container__button-subscribe{
     border-radius: 4px;
     padding: 8px 24px;
-    width: 165px;
+    max-width: 165px;
     height: 40px;
-    background: #4d5ae5;
+    background-color: #4d5ae5;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.04em;
@@ -453,6 +458,10 @@ body{
     flex-direction: row;
     margin-left: 24px;
     margin-top: auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
 }
 .footer__container__button-subscribe__icon{
     margin-left: 16px;
