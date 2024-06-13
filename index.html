@@ -598,7 +598,6 @@
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </button>
-        
         <p class="modal__subtitle">Leave your contacts and we will call you back</p>
         <form class="modal__form">
           <div class="modal__field">
@@ -641,18 +640,16 @@
                 <div class="modal__field modal__field__checkbox-container">
                   <input class="modal__field__checkbox visually-hidden" type="checkbox" id="user-privacy" name="user-privacy" value="true"/>
                   <label for="user-privacy" class="modal__field__checkbox__link-text form-label">I accept the terms and conditions of the
-                      <span class="modal__field__checkbox__link-part-text">
-                          <svg class="modal__field__checkbox__link-part-text__svg" width="10" height="8">
-                              <use href="./images/icons.svg#privacy-policy"></use>
-                          </svg>
+                      <a class="modal__field__checkbox__link__text-part">
                           Privacy Policy
-                      </span>
+                      </a>
+                      <svg>
+                        <use href="./images/icons.svg#icon-checkbox" />
+                      </svg>
                   </label> 
               </div>
-          
-              <div class="modal__field__button-send">
-                  <button type="submit">Send</button>
-              </div>
+              <button class="modal__field__button-send" type="submit">Send</button>
+              
         </form>
       </div>
     </div>
