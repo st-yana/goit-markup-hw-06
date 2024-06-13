@@ -290,6 +290,7 @@ body{
 .team__container__list__item__link-icon:hover,
 .team__container__list__item__link-icon:focus{
     background-color: #404bbf;
+    border: none;
 }
 
 /* ------------3333333333---------- */
@@ -513,7 +514,7 @@ body{
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background-color: #404bbf;
+    background-color: #e7e9fc;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
     cursor: pointer;
@@ -523,6 +524,7 @@ body{
     align-items: center;
     outline: none; 
 }
+
 .modal__button-close:hover .modal__button-close__icon,
 .modal__button-close:focus .modal__button-close__icon{
     fill: #ffffff; 
@@ -646,7 +648,7 @@ body{
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
 }
-.modal__field__checkbox:checked + .modal__field__checkbox__link-text .modal__field__checkbox__link-part-text {
+.modal__field__checkbox:checked + .modal__field__checkbox__link__text-part {
     background-color: #404bbf;
     border: none;
     fill:  #F4F4FD;
@@ -676,5 +678,8 @@ body{
     border: none;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__field__checkbox__link-text__pp{
+    color: #4d5ae5;
 }
 
