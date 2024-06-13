@@ -524,13 +524,18 @@ body{
     align-items: center;
     outline: none; 
 }
-
-.modal__button-close:hover .modal__button-close__icon,
-.modal__button-close:focus .modal__button-close__icon{
-    fill: #ffffff; 
+.modal__button-close:hover, 
+.modal__button-close:focus{
+    background-color: #404bbf; 
+    border: none;
 }
 .modal__button-close__icon{
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #2e2f42;
+}
+.modal__button-close:hover .modal__button-close__icon,
+.modal__button-close:focus .modal__button-close__icon{
+    fill: #ffffff; 
 }
 .modal__subtitle{
     font-size: 16px;
@@ -648,11 +653,15 @@ body{
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
 }
-.modal__field__checkbox:checked + .modal__field__checkbox__link__text-part {
+.modal__field__checkbox:checked + label .modal__field__checkbox__link__text-part {
     background-color: #404bbf;
     border: none;
-    fill:  #F4F4FD;
 }
+
+.modal__field__checkbox:checked + label .modal__field__checkbox__link__text-part .modal__field__checkbox__link__text-part__svg use {
+    fill: #f4f4fd;
+}
+
 /* input[type="checkbox"] {
     display: flex;
     justify-content:left;
