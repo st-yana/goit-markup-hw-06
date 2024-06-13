@@ -653,7 +653,7 @@ body{
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
 }
-.modal__field__checkbox:checked + label .modal__field__checkbox__link-text {
+.modal__field__checkbox:checked + label .modal__field__checkbox__link__text-part {
     background-color: #404bbf;
     border: none;
 }
@@ -681,5 +681,9 @@ body{
 }
 .modal__field__checkbox__link-text__pp{
     color: #4d5ae5;
+    text-decoration: underline;
+    cursor: pointer;
 }
-
+.team__container__list__item__icon__svg:checked{
+    fill: #f4f4fd;
+}
