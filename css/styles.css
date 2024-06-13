@@ -658,8 +658,8 @@ body{
     border: none;
 }
 
-.modal__field__checkbox:checked + label .modal__field__checkbox__link__text-part .modal__field__checkbox__link__text-part__svg use {
-    fill: #f4f4fd;
+.modal__field__checkbox:checked + label .modal__field__checkbox__link__text-part .modal__field__checkbox__link__text-part__svg {
+    fill: #F4F4FD;
 }
 
 /* input[type="checkbox"] {
