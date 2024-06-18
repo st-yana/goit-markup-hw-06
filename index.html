@@ -81,8 +81,8 @@
     </header>
     <!-- ------------header--------------- -->
     <main>
-      <!-- ------------------------ 111111111111111 -->
-      <!-- <section class="solutions">
+      <!----------------solutions---------------->
+      <section class="solutions">
         <div class="solutions__container container">
           <h1 class="solutions__container__title">
             Effective Solutions for Your Business
@@ -91,10 +91,10 @@
             Order Service
           </button>
         </div>
-      </section> -->
-      <!-------------------------- 11111111111111 -->
-      <!-------------------------------- 222222222222222 -->
-      <!-- <section class="features">
+      </section>
+      <!----------------solutions---------------->
+      <!----------------features----------------->
+      <section class="features">
         <div class="features__container container">
           <h2 class="visually-hidden">Features</h2>
           <ul class="features__container__list">
@@ -108,10 +108,10 @@
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="features__container__list__item__title subtitle">
+              <h3 class="features__container__list__item__title subtitle ">
                 Strategy
               </h3>
-              <p class="features__container__list__item__text body-text">
+              <p class="features__container__list__item__text body-text features__container__list__item__text__tablet">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
@@ -126,10 +126,10 @@
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="features__container__list__item__title subtitle">
+              <h3 class="features__container__list__item__title subtitle ">
                 Punctuality
               </h3>
-              <p class="features__container__list__item__text body-text">
+              <p class="features__container__list__item__text body-text features__container__list__item__text__tablet">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
@@ -172,16 +172,32 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!---------------------------- 22222222222222222222 -->
+      </section>
+      <!----------------features----------------->
 
-      <!-- --------------------------33333333333333 -->
-      <!-- <section class="team">
+      <!----------------team--------------------->
+      <section class="team">
         <div class="team__container container">
           <h2 class="team__container__title section-title">Our Team</h2>
           <ul class="team__container__list flex-list">
-            <li class="team__container__list__item">
-              <img src="./images/mark.jpg" alt="Mark Guerrero" width="264" />
+            <li class="team__container__list__item team__container__list__item__tablet">
+              <picture>
+                <source 
+                media="(min-width: 1158px)"
+                srcset="
+                ./images/mark.jpg 1x,
+                ./images/mark-2x.jpg 2x
+                "
+                />
+                <source
+                media="(min-width: 768px)"
+                srcset="
+                ./images/mark.jpg 1x,
+                ./images/mark-2x.jpg 2x
+                "
+                >
+                <img src="./images/mark.jpg" alt="Mark Guerrero" width="264" />
+              </picture>
               <div class="team__container__list__item__caption">
                 <h3
                   class="team__container__list__item__caption__subtitle subtitle"
@@ -238,8 +254,24 @@
               </div>
             </li>
 
-            <li class="team__container__list__item">
-              <img src="./images/tom.jpg" alt="Tom Ford" width="264" />
+            <li class="team__container__list__item team__container__list__item__tablet">
+              <picture>
+                <source 
+                media="(min-width: 1158px)"
+                srcset="
+                ./images/tom.jpg 1x,
+                ./images/tom-2x.jpg 2x
+                "
+                />
+                <source
+                media="(min-width: 768px)"
+                srcset="
+                ./images/tom.jpg 1x,
+                ./images/tom-2x.jpg 2x
+                "
+                >
+                <img src="./images/tom.jpg" alt="Tom Ford" width="264" />
+              </picture>
               <div class="team__container__list__item__caption">
                 <h3
                   class="team__container__list__item__caption__subtitle subtitle"
@@ -296,7 +328,23 @@
               </div>
             </li>
             <li class="team__container__list__item">
-              <img src="./images/camila.jpg" alt="Camila Garcia" width="264" />
+              <picture>
+                <source 
+                media="(min-width: 1158px)"
+                srcset="
+                ./images/camila.jpg 1x,
+                ./images/camila-2x.jpg 2x
+                "
+                />
+                <source
+                media="(min-width: 768px)"
+                srcset="
+                ./images/camila.jpg 1x,
+                ./images/camila-2x.jpg 2x
+                "
+                >
+                <img src="./images/camila.jpg" alt="Camila Garcia" width="264" />
+              </picture>
               <div class="team__container__list__item__caption">
                 <h3
                   class="team__container__list__item__caption__subtitle subtitle"
@@ -353,7 +401,23 @@
               </div>
             </li>
             <li class="team__container__list__item">
-              <img src="./images/daniel.jpg" alt="Daniel Wilson" width="264" />
+              <picture>
+                <source 
+                media="(min-width: 1158px)"
+                srcset="
+                ./images/daniel.jpg 1x,
+                ./images/daniel-2x.jpg 2x
+                "
+                />
+                <source
+                media="(min-width: 768px)"
+                srcset="
+                ./images/daniel.jpg 1x,
+                ./images/daniel-2x.jpg 2x
+                "
+                >
+                <img src="./images/daniel.jpg" alt="Daniel Wilson" width="264" />
+              </picture>
               <div class="team__container__list__item__caption">
                 <h3
                   class="team__container__list__item__caption__subtitle subtitle"
@@ -411,11 +475,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!------------------------- 3333333333333 -->
+      </section>
+      <!----------------team--------------------->
 
-      <!------------------------ 444444444444444 portfolio -->
-      <!-- <section class="portfolio">
+      <!----------------portfolio---------------->
+      <section class="portfolio">
         <div class="portfolio__container container">
           <h2 class="portfolio__container__title section-title">
             Our Portfolio
@@ -423,7 +487,24 @@
           <ul class="portfolio__container__list flex-list">
             <li class="portfolio__container__list__item">
               <div class="portfolio__container__list__item__img">
-                <img src="./images/banking-app.jpg" alt="Banking App" />
+                <picture>
+                  <source 
+                  media="(min-width: 1158px)"
+                  srcset="
+                  ./images/banking-app.jpg 1x,
+                  ./images/banking-app-2x.jpg 2x
+                  "
+                  />
+                  <source
+                  media="(min-width: 768px)"
+                  srcset="
+                  ./images/banking-app.jpg 1x,
+                  ./images/banking-app-2x.jpg 2x
+                  "
+                  >
+                  <img src="./images/banking-app-mob.jpg" alt="Banking App" />
+                </picture>
+                
                 <p class="portfolio__container__list__item__img__text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -439,10 +520,24 @@
             </li>
             <li class="portfolio__container__list__item">
               <div class="portfolio__container__list__item__img">
-                <img
-                  src="./images/cashless-payment.jpg"
-                  alt="Cashless Payment"
+                <picture>
+                  <source 
+                  media="(min-width: 1158px)"
+                  srcset="
+                  ./images/cashless-payment.jpg 1x,
+                  ./images/cashless-payment-2x.jpg 2x
+                  "
+                  />
+                  <source
+                  media="(min-width: 768px)"
+                  srcset="
+                  ./images/cashless-payment.jpg 1x,
+                  ./images/cashless-payment-2x.jpg 2x
+                  "
+                  >
+                  <img src="./images/cashless-payment-mob.jpg" alt="Cashless Payment"
                 />
+                </picture>
                 <p class="portfolio__container__list__item__img__text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -458,7 +553,23 @@
             </li>
             <li class="portfolio__container__list__item">
               <div class="portfolio__container__list__item__img">
-                <img src="./images/meditation-app.jpg" alt="Meditation App" />
+                <picture>
+                  <source 
+                  media="(min-width: 1158px)"
+                  srcset="
+                  ./images/meditation-app.jpg 1x,
+                  ./images/meditation-app-2x.jpg 2x
+                  "
+                  />
+                  <source
+                  media="(min-width: 768px)"
+                  srcset="
+                  ./images/meditation-app.jpg 1x,
+                  ./images/meditation-app-2x.jpg 2x
+                  "
+                  >
+                  <img src="./images/meditation-app-mob.jpg" alt="Meditation App" />
+                </picture>
                 <p class="portfolio__container__list__item__img__text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -474,7 +585,24 @@
             </li>
             <li class="portfolio__container__list__item">
               <div class="portfolio__container__list__item__img">
-                <img src="./images/taxi-service.jpg" alt="Taxi Service" />
+                <picture>
+                  <source 
+                  media="(min-width: 1158px)"
+                  srcset="
+                  ./images/taxi-service.jpg 1x,
+                  ./images/taxi-service-2x.jpg 2x
+                  "
+                  />
+                  <source
+                  media="(min-width: 768px)"
+                  srcset="
+                  ./images/taxi-service.jpg 1x,
+                  ./images/taxi-service-2x.jpg 2x
+                  "
+                  >
+                  <img src="./images/taxi-service-mob.jpg" alt="Taxi Service" />
+                </picture>
+                
                 <p class="portfolio__container__list__item__img__text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -490,10 +618,24 @@
             </li>
             <li class="portfolio__container__list__item">
               <div class="portfolio__container__list__item__img">
-                <img
-                  src="./images/screen-illustrations.jpg"
-                  alt="Screen Illustrations"
-                />
+                <picture>
+                  <source 
+                  media="(min-width: 1158px)"
+                  srcset="
+                  ./images/screen-illustrations.jpg 1x,
+                  ./images/screen-illustrations-2x.jpg 2x
+                  "
+                  />
+                  <source
+                  media="(min-width: 768px)"
+                  srcset="
+                  ./images/screen-illustrations.jpg 1x,
+                  ./images/screen-illustrations-2x.jpg 2x
+                  "
+                  >
+                  <img src="./images/screen-illustrations-mob.jpg" alt="Screen Illustrations"/>
+                </picture>
+                
                 <p class="portfolio__container__list__item__img__text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -509,7 +651,23 @@
             </li>
             <li class="portfolio__container__list__item">
               <div class="portfolio__container__list__item__img">
-                <img src="./images/online-courses.jpg" alt="Online Courses" />
+                <picture>
+                  <source 
+                  media="(min-width: 1158px)"
+                  srcset="
+                  ./images/online-courses.jpg 1x,
+                  ./images/online-courses-2x.jpg 2x
+                  "
+                  />
+                  <source
+                  media="(min-width: 768px)"
+                  srcset="
+                  ./images/online-courses.jpg 1x,
+                  ./images/online-courses-2x.jpg 2x
+                  "
+                  >
+                  <img src="./images/online-courses-mob.jpg" alt="Online Courses" />
+                </picture>
                 <p class="portfolio__container__list__item__img__text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -525,11 +683,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-------------------------------44444--portfolio------------>
     </main>
     <!-- -------------FOOTER---------------- -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer__container container">
         <div class="footer__container__content">
           <a class="footer__container__content__logo logo" href="./index.html"
@@ -573,6 +731,8 @@
             </li>
           </ul>
         </div>
+
+
         <div class="footer__container__subscribe">
           <p class="footer__container__social-media__subtitle">Subscribe</p>
           <form class="footer__container__subscribe__form">
@@ -587,7 +747,7 @@
           </form>
       </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- -------------FOOTER---------------- -->
     <!-- -------------MODAL--------- -->
     <!-- <div class="backdrop is-open">
