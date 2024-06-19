@@ -32,7 +32,6 @@ button{
 input{
 	font-family: inherit;
 }
-
 body{
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -44,7 +43,7 @@ body{
 /* ----------------------------------------------  */
 .container { 
     max-width: 320px;
-    padding: 0 15px;  
+    padding: 0 16px;  
     margin: 0 auto; 
 }
 .section-title{
@@ -60,7 +59,6 @@ body{
     display: flex;
     gap: 24px;
 }
-
 .body-text{
     font-weight: 400;
     font-size: 16px;
@@ -96,6 +94,9 @@ body{
 }
 .header__container{
     width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .header__container__navigation{
     display: flex;
@@ -159,12 +160,90 @@ body{
 .header__container__address__list__item{
     color: #434455;
 }
-/* -------------------solutions---111111111111--------------- */
+.header__mob-button-open__svg{
+    display: flex;
+    justify-content: center;
+}
+
+
+.header__mob-menu{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    padding: 0 16px;
+}
+.header__mob-button-close{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color:transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.header__mob-button-close:hover, 
+.header__mob-button-close:focus{
+    background-color: #404bbf; 
+    border: none;
+}
+.header__mob-button-close:hover .modal__button-close__icon,
+.header__mob-button-close:focus .modal__button-close__icon{
+    fill: #ffffff; 
+}
+
+.header__mob-menu__list{
+    margin-top: 72px;
+    margin-bottom: 168px;
+}
+.header__mob-menu__list__item{
+    margin-bottom: 40px;
+}
+.header__mob-menu__list__item__link{  
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 111%;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+.header__mob-menu__address__list{
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+    flex-direction: column;
+}
+.header__mob__address__list__item{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    font-style: normal;
+}
+.header__icon__list{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+/* ---------------header------------ */
+/* <!----------------solutions---------------->  */
 .solutions{
     margin: 0 auto;
     padding: 72px 0;
     max-width: 1440px;
-    
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-solutions-mob.jpg);
     background-size: cover; 
     background-position: center;
@@ -206,8 +285,8 @@ body{
 .solutions__container__button:focus{
     background-color: #404BBF;
 }
-/* -------1111111111111--------- */
-/* --------------222222222222------------- */
+/* <!----------------solutions----------------> */
+/* ------------------features------------- */
 .features{
     padding: 96px 0;
 }
@@ -233,8 +312,8 @@ body{
     line-height: 150%; 
     color: #434455;
 }
-/* --------------222222222222------------- */
-/* -------------333333333------ */
+/* --------------features------------- */
+/* -------------team------ */
 .team{
     background-color: #F4F4FD;
     padding: 96px 0;
@@ -290,8 +369,8 @@ body{
     border: none;
 }
 
-/* ------------3333333333---------- */
-/* -----------444444444444-------------- */
+/* ------------team---------- */
+/* -----------portfolio-------------- */
 .portfolio{
     padding: 96px 0;
 }
@@ -341,7 +420,7 @@ body{
     text-transform: capitalize;
     margin-bottom: 8px;
 }
-<!----------------portfolio---------------->
+/* <!----------------portfolio----------------> */
 
 /* ---------------------FOOTER-------------------- */
 .footer{
@@ -384,7 +463,6 @@ body{
     margin-bottom: 16px;
     display: flex;
     justify-content: center;
-    
 }
 .footer__container__list__icon{
     gap: 16px;
@@ -467,7 +545,6 @@ body{
 .footer__container__button-subscribe__icon{
     margin-left: 16px;
 }
-
 /* ---------------------FOOTER-------------------- */
 /* -----------MODAL------------ */
 .backdrop{
@@ -481,22 +558,25 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
     opacity: 0;
-    /* visibility: hidden; */
+    visibility: hidden;
     pointer-events: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-open{
-    opacity: 1;
-    /* visibility: visible; */
+    opacity: 1; 
+    visibility: visible;
+    pointer-events: auto;
+}
+.is-open{
+    opacity: 1; 
+    visibility: visible;
     pointer-events: auto;
 }
 .modal{
     position: absolute;
     border-radius: 4px;
-    width: 408px;
+    width: 288px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     min-height: 584px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
@@ -687,17 +767,10 @@ body{
 .team__container__list__item__icon__svg:checked{
     fill: #f4f4fd;
 }
-
-
-
-
-
-
 /* -----------MEDIA------------ */
 @media screen and (min-width: 768px){
     .container { 
-        max-width: 768px;
-        padding: 0 15px;  
+        max-width: 768px; 
     }
     .header__container{
         max-width: 768px;
@@ -716,7 +789,16 @@ body{
     }
     .solutions{
         padding: 112px 0;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-solutions-tablet.jpg);
+    }
+    @media screen and (-webkin-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi){
+        .solutions{
+            padding: 112px 0;
+            background-image: 
+            linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+            url(../images/background-solutions-tablet.jpg);
+        }
     }
     .solutions__container__title{
         font-size: 56px;
@@ -762,10 +844,16 @@ body{
     .logo{
         margin-bottom: 16px;
     }
-    
-
+    .header__mob-button-open{
+        display: none;
+    }
+    .header__mob-menu{
+        display: none;
+    }
+    .modal{
+        width: 408px;
+    }
 }
-
 @media screen and (min-width: 1158px){
     .container { 
         max-width: 1158px;
@@ -794,7 +882,6 @@ body{
         margin-bottom: 8px;
         background-color: #f4f4fd;
     }
-   
     .features__container__list__item{
         width: calc((100% - 72px) / 4);
         justify-content: space-between;
@@ -876,7 +963,5 @@ body{
         justify-content: start;
         padding: 0 108px;
     }
-    
 }
-
 /* -----------MEDIA------------ */
