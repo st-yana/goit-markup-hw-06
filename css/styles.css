@@ -34,7 +34,6 @@ input{
 }
 body{
     font-family: "Roboto", sans-serif;
-    font-weight: 500;
     font-style: normal;
     text-decoration: none;
     color: #434455;
@@ -324,7 +323,7 @@ body{
 .team__container__list{
     display: flex;
     flex-wrap: wrap;
-    gap: 72px;
+    gap: 64px 72px;
     justify-content: center;
 }
 .team__container__list__item{
@@ -443,7 +442,6 @@ body{
     color: #f4f4fd;
 }
 .footer__container__content__text{
-    font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
@@ -785,7 +783,7 @@ body{
     .header__container__list{
         display: flex;
         flex-wrap: nowrap;
-        gap: 24px;
+        gap: 40px;
     }
     .solutions{
         padding: 112px 0;
@@ -810,7 +808,7 @@ body{
     .features__container__list{
         display: flex;
         flex-wrap: wrap;
-        gap: 24px;
+        gap: 72px 24px;
     }
     .features__container__list__item__title{
         text-align: start;
@@ -920,10 +918,7 @@ body{
         flex-direction: row;
     }
     .footer__container__subscribe{
-        margin-left: 80px;
-    }
-    .footer__container__button-subscribe{
-        margin-left: 24px;
+        margin-left: auto;
     }
     .footer__container__content__logo{
         display: inline-block;
@@ -936,17 +931,13 @@ body{
 }
 @media screen and (min-width: 768px) and (max-width: 1158px) {
     .header__container__list__addres{
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
     }
     .header__container__navigation__logo{
         margin-right: 100px;
         margin-left: 0;
-    }
-    .features__container__list__item__text__tablet{
-        margin-bottom: 72px;
-    }
-    .team__container__list__item__tablet{
-        margin-bottom: 64px;
     }
     .footer__container__content__logo{
         margin: 0;
